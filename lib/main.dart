@@ -1,6 +1,6 @@
-import 'package:ejar_1/screens/homeScreen.dart';
-import 'package:ejar_1/screens/login.dart';
-import 'package:ejar_1/widgets/splash.dart';
+import 'package:ejar/screens/homeScreen.dart';
+import 'package:ejar/screens/login.dart';
+import 'package:ejar/widgets/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 

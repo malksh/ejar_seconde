@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import '../screens/homeScreen.dart';
 
 class Houses extends StatefulWidget {
-  const Houses(this.index, this.item, this.onTap, {Key? key})
-      : super(key: key);
+  const Houses(this.index, this.item, this.onTap, {Key? key}) : super(key: key);
   final Item item;
   final int index;
   final Function()? onTap;
@@ -14,73 +13,81 @@ class Houses extends StatefulWidget {
   State<Houses> createState() => _HousesState();
 }
 
-class HousesCata extends State<Houses> {
+class _HousesState extends State<Houses> {
   //List<Item> favorite = [];
-  List<Item> allOfTheBuilding = [
+  static List<Item> allOfTheBulding = [
     Item(
-      'منزل',
-      true,
-      'بنغازي, ليبيا',
-      4000,
-      'https://www.almrsal.com/wp-content/uploads/2022/12/40-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%A8%D8%B3%D9%8A%D8%B7%D8%A9-1-1.jpg',
-      218928888888,
-    ),
+        title: 'منزل',
+        type: 'منزل',
+        color: false,
+        location: 'بنغازي , ليبيا',
+        price: 4000,
+        thumb_url:
+            'https://www.almrsal.com/wp-content/uploads/2022/12/40-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%A8%D8%B3%D9%8A%D8%B7%D8%A9-1-1.jpg',
+        phoneNumber: 218928888888),
     Item(
-      'منزل صغير',
-      false,
-      'تاجوراء، ليبيا',
-      500,
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS335ZuVOtVUA5eyfMEeuKwllD531T0bAO06g&usqp=CAU.jpg',
-      2189299999999,
-    ),
+        title: 'منزل صغير',
+        type: 'منزل',
+        color: false,
+        location: 'تاجوراء, ليبيا',
+        price: 500,
+        thumb_url:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS335ZuVOtVUA5eyfMEeuKwllD531T0bAO06g&usqp=CAU.jpg',
+        phoneNumber: 2189299999999),
     Item(
-      'شقة',
-      false,
-      'زليتن، ليبيا',
-      1000,
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBqdzVMfrrSUvWuH7X-w9QbY68jEhrS2eKfJOTNDLOvl0uf2zkf7grPbLR_GiH1y7k-GQ&usqp=CAU.jpg',
-      218915555555,
-    ),
+        title: 'شقة ',
+        type: 'شقة',
+        color: false,
+        location: 'زليتن, ليبيا',
+        price: 1000,
+        thumb_url:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBqdzVMfrrSUvWuH7X-w9QbY68jEhrS2eKfJOTNDLOvl0uf2zkf7grPbLR_GiH1y7k-GQ&usqp=CAU.jpg',
+        phoneNumber: 218915555555),
     Item(
-      'استوديو',
-      false,
-      'سرت، ليبيا',
-      1500,
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxLuTJF7RrbMKlF1Wf3QaBPCnNGFzzQiPRlYTos8hx0uy2vwmv2_aVXqs9P_boVYg76_g&usqp=CAU.jpg',
-      218943442323,
-    ),
+        title: 'استوديو ',
+        type: 'شقة',
+        color: false,
+        location: 'سرت , ليبيا',
+        price: 1500,
+        thumb_url:
+            ' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxLuTJF7RrbMKlF1Wf3QaBPCnNGFzzQiPRlYTos8hx0uy2vwmv2_aVXqs9P_boVYg76_g&usqp=CAU.jpg',
+        phoneNumber: 218943442323),
     Item(
-      'منزل حديث',
-      true,
-      'مصراتة، ليبيا',
-      4000,
-      'https://www.almrsal.com/wp-content/uploads/2022/12/40-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%A8%D8%B3%D9%8A%D8%B7%D8%A9-1-1.jpg',
-      218922222222,
-    ),
+        title: 'منزل حديث',
+        type: 'منزل',
+        color: false,
+        location: 'مصراتة, ليبيا',
+        price: 4000,
+        thumb_url:
+            'https://www.almrsal.com/wp-content/uploads/2022/12/40-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%A8%D8%B3%D9%8A%D8%B7%D8%A9-1-1.jpg',
+        phoneNumber: 218922222222),
     Item(
-      'منزل صغير',
-      false,
-      'الخمس، ليبيا',
-      500,
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS335ZuVOtVUA5eyfMEeuKwllD531T0bAO06g&usqp=CAU.jpg',
-      218923333333,
-    ),
+        title: 'منزل صغير',
+        type: 'منزل',
+        color: false,
+        location: ' الخمس, ليبيا',
+        price: 500,
+        thumb_url:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS335ZuVOtVUA5eyfMEeuKwllD531T0bAO06g&usqp=CAU.jpg',
+        phoneNumber: 218923333333),
     Item(
-      'منزل',
-      false,
-      'طرابلس، ليبيا',
-      1000,
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBqdzVMfrrSUvWuH7X-w9QbY68jEhrS2eKfJOTNDLOvl0uf2zkf7grPbLR_GiH1y7k-GQ&usqp=CAU.jpg',
-      218924444444,
-    ),
+        title: 'منزل ',
+        type: 'منزل',
+        color: false,
+        location: 'طرابلس, ليبيا',
+        price: 1000,
+        thumb_url:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBqdzVMfrrSUvWuH7X-w9QbY68jEhrS2eKfJOTNDLOvl0uf2zkf7grPbLR_GiH1y7k-GQ&usqp=CAU.jpg',
+        phoneNumber: 218924444444),
     Item(
-      'شقة',
-      false,
-      'طرابلس، ليبيا',
-      1500,
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxLuTJF7RrbMKlF1Wf3QaBPCnNGFzzQiPRlYTos8hx0uy2vwmv2_aVXqs9P_boVYg76_g&usqp=CAU.jpg',
-      218915555555,
-    ),
+        title: 'شقة',
+        type: 'شقة',
+        color: false,
+        location: 'طرابلس , ليبيا',
+        price: 1500,
+        thumb_url:
+            ' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxLuTJF7RrbMKlF1Wf3QaBPCnNGFzzQiPRlYTos8hx0uy2vwmv2_aVXqs9P_boVYg76_g&usqp=CAU.jpg',
+        phoneNumber: 218915555555),
   ];
 
   @override
@@ -183,13 +190,13 @@ class HousesCata extends State<Houses> {
                       onPressed: () {
                         setState(() {
                           isFavorite = !isFavorite;
-                          if (allOfTheBuilding[widget.index].color!) {
+                          if (allOfTheBulding[widget.index].color!) {
                             try {
                               print('00000000000000000000');
                               print(widget.item.color!);
 
                               widget.item.color = !widget.item.color!;
-                              allOfTheBuilding[widget.index].color =
+                              allOfTheBulding[widget.index].color =
                                   !widget.item.color!;
                             } on Exception catch (e) {
                               // TODO
@@ -200,16 +207,15 @@ class HousesCata extends State<Houses> {
                               print(widget.item.color!);
 
                               widget.item.color = !widget.item.color!;
-                              allOfTheBuilding[widget.index].color =
+                              allOfTheBulding[widget.index].color =
                                   !widget.item.color!;
                             } on Exception catch (e) {
                               print("---------------------------${e}");
-                              
                             }
                           }
                         });
 
-                        if (!allOfTheBuilding[widget.index].color!) {
+                        if (!allOfTheBulding[widget.index].color!) {
                           favorite.add(widget.item);
                         } else {
                           favorite.remove(widget.item);

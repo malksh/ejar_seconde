@@ -1,4 +1,4 @@
-import 'package:ejar_1/screens/login.dart';
+import 'package:ejar/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 

@@ -1,5 +1,5 @@
-import 'package:ejar_1/screens/messages_screeen.dart';
-import 'package:ejar_1/widgets/Chat.dart';
+import 'package:ejar/screens/messages_screeen.dart';
+import 'package:ejar/widgets/Chat.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

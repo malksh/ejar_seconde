@@ -1,7 +1,7 @@
-import 'package:ejar_1/models/ItemModel.dart';
-import 'package:ejar_1/widgets/searchWidget.dart';
-import 'package:ejar_1/widgets/selectCatagory.dart';
-import 'package:ejar_1/widgets/suggestionsList.dart';
+import 'package:ejar/models/ItemModel.dart';
+import 'package:ejar/widgets/searchWidget.dart';
+import 'package:ejar/widgets/selectCatagory.dart';
+import 'package:ejar/widgets/suggestionsList.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

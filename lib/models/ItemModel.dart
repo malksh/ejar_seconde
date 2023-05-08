@@ -20,13 +20,13 @@
 
   static List<Item> recommendation = [
     Item(
-        title: 'منزل حديث',
-        type: 'منزل',
-        color: false,
-        location: 'مصراتة, ليبيا',
-        price: 4000,
+        title:      'منزل حديث',
+        type:       'منزل',
+        color:      false,
+        location:   'مصراتة, ليبيا',
+        price:       4000,
         thumb_url:
-            'https://www.almrsal.com/wp-content/uploads/2022/12/40-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%A8%D8%B3%D9%8A%D8%B7%D8%A9-1-1.jpg',
+                    'https://www.almrsal.com/wp-content/uploads/2022/12/40-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%A8%D8%B3%D9%8A%D8%B7%D8%A9-1-1.jpg',
         phoneNumber: 218922222222),
     Item(
         title: 'منزل صغير',
