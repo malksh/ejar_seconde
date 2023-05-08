@@ -21,7 +21,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
         elevation: 0,
         title: const Text(
           '',
-           style: TextStyle(color: Colors.black87),
+          style: TextStyle(color: Colors.black87),
         ),
         leading: const Icon(
           Icons.menu,
@@ -37,10 +37,10 @@ class _ProfileWidgetState extends State<ProfileWidget> {
             children: <Widget>[
               Row(
                 children: [
-                    CircleAvatar(
-                  radius: 50,
-                  backgroundImage: AssetImage("assets/profile_icon.jpg"),
-                ),
+                  CircleAvatar(
+                    radius: 50,
+                    backgroundImage: AssetImage("assets/profile_icon.jpg"),
+                  ),
                 ],
               ),
               Container(
@@ -91,7 +91,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                             onPressed: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                return  ChatScreen(Chat());
+                                return ChatScreen(Chat());
                               }));
                             },
                           )),
@@ -195,7 +195,8 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    padding: const EdgeInsets.only(top: 20, left: 10, right: 10),
+                    padding:
+                        const EdgeInsets.only(top: 20, left: 10, right: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [],
