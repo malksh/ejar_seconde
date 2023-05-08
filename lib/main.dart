@@ -1,20 +1,28 @@
+import 'package:ejar/widgets/splash.dart';
+
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+   await Firebase.initializeApp(
+    // name: "aa-store",
+    options: const FirebaseOptions(
+        apiKey: 'AIzaSyAZHzgJv86oMdbo2tgfP-dWJ5cXTAjsE3A',
+        appId: '1:142901758861:android:b50042874ad5347106cbc4',
+        messagingSenderId: '142901758861',
+        projectId: 'ejar-3ea2a'),
+  );
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return  MaterialApp(
+      home: 
+      Splash(),
     );
   }
 }

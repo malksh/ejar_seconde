@@ -1,4 +1,8 @@
+import 'package:ejar/screens/Houses.dart';
+import 'package:ejar/screens/HousesCatagory.dart';
 import 'package:flutter/material.dart';
+
+import '../models/ItemModel.dart';
 
 class SelectCatagory extends StatefulWidget {
   const SelectCatagory({super.key});
@@ -6,7 +10,9 @@ class SelectCatagory extends StatefulWidget {
   @override
   State<SelectCatagory> createState() => _SelectCatagoryState();
 }
-
+ late final Item item;
+  late final int index;
+  late final Function()? onTap;
 class _SelectCatagoryState extends State<SelectCatagory> {
   @override
   Widget build(BuildContext context) {
@@ -37,6 +43,9 @@ Widget catagoryButton(IconData icon, String? text, context) {
     ),
     child: InkWell(
       onTap: () {
+         Navigator.push(context,
+                    // ignore: prefer_const_constructors
+                    MaterialPageRoute(builder: (context) =>  HousesCatagory(text: 'text', item: item, index: index)));
       },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
