@@ -1,6 +1,6 @@
-import 'package:ejar_1/models/ItemModel.dart';
-import 'package:ejar_1/widgets/houseCard.dart';
-import 'package:ejar_1/widgets/suggestionsList.dart';
+import 'package:ejar/models/ItemModel.dart';
+import 'package:ejar/widgets/houseCard.dart';
+import 'package:ejar/widgets/suggestionsList.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
