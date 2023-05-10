@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142901758861",
+    "project_id": "ejar-3ea2a",
+    "storage_bucket": "ejar-3ea2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142901758861:android:b50042874ad5347106cbc4",
+        "android_client_info": {
+          "package_name": "com.example.ejar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142901758861-1orlp6m4sumee02476tdfqkmr33iiujo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZHzgJv86oMdbo2tgfP-dWJ5cXTAjsE3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142901758861-1orlp6m4sumee02476tdfqkmr33iiujo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
